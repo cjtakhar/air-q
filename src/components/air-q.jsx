@@ -13,7 +13,7 @@ const AirQ = () => {
     e.preventDefault();
     try {
       const citiesResponse = await axios.get(
-        `http://api.airvisual.com/v2/cities?state=${state}&country=USA&key=${api_key}`
+        `https://api.airvisual.com/v2/cities?state=${state}&country=USA&key=${api_key}`
       );
       const citiesData = citiesResponse.data;
 
