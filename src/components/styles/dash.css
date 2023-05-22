@@ -149,4 +149,14 @@
     .dash-form button {
         text-align: center;
     }
+
+    .response-title {
+        font-size: 4rem;
+        text-align: center;
+        padding: 0;
+    }
+    .response-text-city {
+        font-size: 2.5rem;
+    
+    }
 }
