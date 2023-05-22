@@ -30,6 +30,14 @@
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.dash-form input:focus {
+    outline: none;
+    border: 2px solid black;
+    text-align: center;
 }
 
 .dash-form button {
@@ -37,13 +45,21 @@
     height: 3rem;
     margin: 1rem;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     border-radius: 5px;
     background-color: #577190;
     color: white;
     font-size: 1rem;
     font-weight: 700;
-}  
+    text-transform: uppercase;
+}
+
+.dash-form button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
 
 @media (max-width: 750px) {
     .dash-title {
