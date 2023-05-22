@@ -61,6 +61,79 @@
     color: white;
 }
 
+.error-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.response-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.response-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.response-text-city {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.response-text-aqi {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem;
+    border: solid 1px black;
+    border-radius: 50px;
+}
+
+.response-text-aqi-text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.response-text-time {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.response-text-date {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.green {
+    color: green;
+  }
+  
+  .yellow {
+    color: gold;
+  }
+  
+  .orange {
+    color: orange;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+
 @media (max-width: 750px) {
     .dash-title {
         font-size: 4rem;
