@@ -1,0 +1,28 @@
+.navBar {
+    background-color: #577190;
+}
+
+.navBrand {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 2rem;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin: 0 2rem;
+    color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
