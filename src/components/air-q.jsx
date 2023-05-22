@@ -24,7 +24,7 @@ const AirQ = () => {
         return;
       }
 
-      const response = await axios.get(`http://localhost:5000/api/aq?city=${matchedCity.city}&state=${state}`);
+      const response = await axios.get(`https://air-q-2023.wl.r.appspot.com/api/aq?city=${matchedCity.city}&state=${state}`);
       const data = response.data;
 
       if (data.status === 'success') {
