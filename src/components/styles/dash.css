@@ -160,3 +160,20 @@
     
     }
 }
+
+@media (max-width: 450px) {
+    .dash-title {
+        padding: 0;
+    }
+
+    .dash-intro {
+        padding: 1rem 0;
+    }
+    .dash-text {
+        padding: 0;
+    }
+    .dash-form {
+        padding: 0;
+        margin: 0;
+    }
+}
