@@ -3,10 +3,10 @@
 }
 
 .navBrand {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0 2rem;
-    color: white;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    margin: 0 2rem !important;
+    color: white !important;
 }
 
 .nav-links {
