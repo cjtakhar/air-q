@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/air-q/static/css/main.ba4ce436.css",
+    "main.js": "/air-q/static/js/main.6cc32d8b.js",
+    "static/js/787.ccce15f5.chunk.js": "/air-q/static/js/787.ccce15f5.chunk.js",
+    "index.html": "/air-q/index.html",
+    "main.ba4ce436.css.map": "/air-q/static/css/main.ba4ce436.css.map",
+    "main.6cc32d8b.js.map": "/air-q/static/js/main.6cc32d8b.js.map",
+    "787.ccce15f5.chunk.js.map": "/air-q/static/js/787.ccce15f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba4ce436.css",
+    "static/js/main.6cc32d8b.js"
+  ]
+}
