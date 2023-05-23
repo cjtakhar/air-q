@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/air-q/static/css/main.ecf8dd17.css",
-    "main.js": "/air-q/static/js/main.a185bb84.js",
+    "main.js": "/air-q/static/js/main.a1ac9147.js",
     "static/js/787.ccce15f5.chunk.js": "/air-q/static/js/787.ccce15f5.chunk.js",
     "index.html": "/air-q/index.html",
     "main.ecf8dd17.css.map": "/air-q/static/css/main.ecf8dd17.css.map",
-    "main.a185bb84.js.map": "/air-q/static/js/main.a185bb84.js.map",
+    "main.a1ac9147.js.map": "/air-q/static/js/main.a1ac9147.js.map",
     "787.ccce15f5.chunk.js.map": "/air-q/static/js/787.ccce15f5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecf8dd17.css",
-    "static/js/main.a185bb84.js"
+    "static/js/main.a1ac9147.js"
   ]
 }
