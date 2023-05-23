@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const AirQ = () => {
   const [city, setCity] = useState('');
-  const [state, setState] = useState('California');
+  const [state, setState] = useState('');
   const [airQualityData, setAirQualityData] = useState(null);
   const [error, setError] = useState(null);
 
@@ -11,22 +11,24 @@ const AirQ = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const trimmedCity = city.trim();
+    const trimmedState = state.trim();
     try {
       const citiesResponse = await axios.get(
-        `https://api.airvisual.com/v2/cities?state=${state}&country=USA&key=${api_key}`
+        `https://api.airvisual.com/v2/cities?state=${trimmedState}&country=USA&key=${api_key}`
       );
       const citiesData = citiesResponse.data;
-
+  
       // Check if city is available in the list of cities
-      const matchedCity = citiesData.data.find((c) => c.city.toLowerCase() === city.toLowerCase());
+      const matchedCity = citiesData.data.find((c) => c.city.toLowerCase() === trimmedCity.toLowerCase());
       if (!matchedCity) {
         setError('City not found.');
         return;
       }
-
-      const response = await axios.get(`https://air-q-2023.wl.r.appspot.com/api/aq?city=${matchedCity.city}&state=${state}`);
+  
+      const response = await axios.get(`https://air-q-2023.wl.r.appspot.com/api/aq?city=${matchedCity.city}&state=${trimmedState}`);
       const data = response.data;
-
+  
       if (data.status === 'success') {
         setAirQualityData(data.data);
         setError(null);
@@ -38,6 +40,7 @@ const AirQ = () => {
       setError('Huh. Something went wrong.');
     }
   };
+  
 
   const showAirQualityData = airQualityData !== null;
 
@@ -83,6 +86,13 @@ const AirQ = () => {
                 placeholder="Enter a city"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
+              />
+                <input
+                className="dash-input"
+                type="text"
+                placeholder="Enter a state"
+                value={state}
+                onChange={(e) => setState(e.target.value)}
               />
               <button className="dash-button" type="submit">
                 Search
