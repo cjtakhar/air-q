@@ -83,14 +83,14 @@ const AirQ = () => {
               <input
                 className="dash-input"
                 type="text"
-                placeholder="Enter a city"
+                placeholder="CITY"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
               />
                 <input
                 className="dash-input"
                 type="text"
-                placeholder="Enter a state"
+                placeholder="STATE"
                 value={state}
                 onChange={(e) => setState(e.target.value)}
               />
